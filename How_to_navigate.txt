@@ -1,0 +1,19 @@
+This folder contains the implementation of Brain Tissue Segmentation of the IBSR dataset. 
+
+The architecture included in the report can be accessed using the notebooks:
+
+1. 2DDenseUnet.ipynb
+2. Ensemble.ipynb (Final Submission)
+
+The results (test) are saved inside Segmented_outputs/Test_Set/ 
+For clarity I am also including the Segmentations performed using the Ensemble on the Validation dataset along with their ground_truths located at
+Segmented_outputs/Validation_Set/segmented_outputs/ and /ground_truths/ respectively
+
+The validation ground truth labels are of dimensions 256X128X256 with a voxel spacing of 1x1.5x1 .
+So the segmentation map of the test data are also saved along the same dimensions. 
+
+The checking of this segmentation can be properly done using the Ensemble Evaluation and Checking Proper Segmentation part of the Ensemble.ipynb
+The functions to calculate the Dice , HD and VD has also been implemented in these sections to avoid any discrepancies. 
+
+
+A very detailed implementation report can be found in the folder Report
